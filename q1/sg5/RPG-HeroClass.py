@@ -6,11 +6,12 @@
 
 class Hero:
     def __init__(self, name, hp):
-        # TODO: store `name` and `hp` as INSTANCE attributes
+        self.name = name
+        self.hp = hp
         pass
 
     def take_damage(self, amount):
-        # TODO: subtract `amount` from this hero's hp
+        self.hp -= amount
         pass
 
 
@@ -23,8 +24,8 @@ class Hero:
 
 # arthur.take_damage(10)
 
-# print(arthur.hp)     # Expected: 90
-# print(morgana.hp)    # Expected: 100
+# print(arthur.name, "HP:", arthur.hp)     # Expected: 90
+# print(morgana.name, "HP:", morgana.hp)    # Expected: 100
 
 
 # this is sodium
